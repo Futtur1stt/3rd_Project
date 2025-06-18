@@ -10,7 +10,17 @@
         background-color: var(--color-main);
         color: var(--color-light);
         height: 40px;
-        padding-inline: 30px
+        padding-inline: 30px;
+
+            @include tablet {
+                flex-direction: column;
+                text-align: center;
+                height: auto;
+            }
+
+            @include mobile {
+                padding-inline: 15px;
+            }
     }
 
     &__schedule {
@@ -34,6 +44,12 @@
 
     &__wrapper {
         margin-left: auto;
+
+            @include tablet {
+                flex-direction: column;
+                text-align: center;
+                margin-left: 0;
+            }
     }
 
     &__link-list {
@@ -41,6 +57,10 @@
 
         display: flex;
         column-gap: 70px;
+
+            @include mobile {
+                flex-direction: column;
+            }
     }
 
     &__link-item {
@@ -51,6 +71,11 @@
             content: url("/Icons/Phone.svg");
             top: 37%;
             left: -30%;
+
+                @include tablet {
+                    top: 27%;
+                    left: -25%;
+                }
         }
 
         &:last-child:before {
@@ -58,6 +83,11 @@
             content: url("/Icons/Location.svg");
             top: 33%;
             left: -12%;
+
+                @include tablet {
+                    top: 28%;
+                    left: -10%;
+                }
         }
     }
 
@@ -80,7 +110,11 @@
         display: flex;
         justify-content: space-between;
         height: 100px;
-        padding-inline: 30px
+        padding-inline: 30px;
+
+            @include mobile {
+                padding-inline: 15px;
+            }
     }
 
     &__box-link {
@@ -95,6 +129,10 @@
         justify-content: space-between;
         align-items: center;
         column-gap: 50px;
+
+            @include tablet {
+                column-gap: 20px;
+            }
     }
 
     &__link {
@@ -119,6 +157,10 @@
         column-gap: 25px;
         width: 100px;
 
+        @include mobile {
+            column-gap: 10px;
+        }
+
         &-link {
             @include fluid-text (13, 12);
 
@@ -133,6 +175,10 @@
                 color: var(--color-high-accent);
                 transform: scale(1.2);
             }
+
+                @include mobile {
+                    font-size: 18px;
+                }
         }
     }
 

@@ -30,9 +30,38 @@
     }
 }
 
-// .button--cross{
-    
-// }
+.button--cross{
+    @include reset-button;
+    @include square (50px);
+
+    position: relative;
+    border-radius: var(--border-radius);
+
+    @include hover {
+        background-color: var(--color-high-accent);
+        transition-duration: var(--transition-duration);
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 22px;
+        left: 7px;
+        width: 75%;
+        height: 2px;
+        background-color: var(--color-main);
+        border-radius: var(--border-radius);
+    }
+
+    &::before {
+        rotate: 45deg;
+    }
+
+    &::after {
+        rotate: -45deg;
+    }
+}
 
 // .button--blue {
 
