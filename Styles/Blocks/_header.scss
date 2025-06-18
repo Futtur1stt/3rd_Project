@@ -1,86 +1,139 @@
-// .header {
-//     display: flex;
-//     width: 100%;
-//     flex-direction: column;
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 
-//     &__inner {
-//         @include flex-center;
+    &__inner {
+        @include flex-center;
 
-//         display: flex;
-//         // justify-content: space-between;
-//         background-color: var(--color-main);
-//         color: var(--color-light);
-//         height: 40px;
-//         padding-inline: 30px
-//     }
+        display: flex;
+        background-color: var(--color-main);
+        color: var(--color-light);
+        height: 40px;
+        padding-inline: 30px
+    }
 
-//     &__schedule {
-//         @include fluid-text (13, 12);
+    &__schedule {
+        @include fluid-text (13, 12);
 
-//         @include flex-center;
+        @include flex-center;
 
-//         display: flex;
-//         gap: 5px;
-//         font-weight: 400;
-//         line-height: 1.67;
-//     }
+        position: relative;
+        display: flex;
+        gap: 5px;
+        font-weight: 400;
+        line-height: 1.67;
 
-//     &__wrapper {
-//         margin-left: auto;
-//     }
+            &::before {
+                position: absolute;
+                content: "{";
+                top: -1px;
+                left: -15px;
+            }
+        }
 
-//     &__link-list {
-//         @include flex-center;
+    &__wrapper {
+        margin-left: auto;
+    }
 
-//         display: flex;
-//         column-gap: 20px;
-//     }
+    &__link-list {
+        @include flex-center;
 
-//     &__href {
-//         @include fluid-text (13, 12);
+        display: flex;
+        column-gap: 70px;
+    }
 
-//         color: var(--color-light);
-//         font-weight: 400;
-//         line-height: 1.67;
-//     }
+    &__link-item {
+        position: relative;
 
-//     &__container {
-//         @include flex-center;
+        &:first-child::before {
+            position: absolute;
+            content: url("/Icons/Phone.svg");
+            top: 37%;
+            left: -30%;
+        }
 
-//         display: flex;
-//         justify-content: space-between;
-//         height: 100px;
-//         padding-inline: 30px
-//     }
+        &:last-child:before {
+            position: absolute;
+            content: url("/Icons/Location.svg");
+            top: 33%;
+            left: -12%;
+        }
+    }
 
-//     &__list {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         column-gap: 25px;
-//     }
+    &__href {
+        @include fluid-text (13, 12);
 
-//     &__link {
-//         color: var(--color-main-txt);
-//         font-weight: 600;
-//         line-height: 0.77;
-//         letter-spacing: 2.6px;
-//         text-transform: uppercase;
-//     }
+        color: var(--color-light);
+        font-weight: 400;
+        line-height: 1.67;
 
-//     &__search {
-//         @include flex-center;
+            @include hover {
+                color: var(--color-high-accent);
+                transform: scale(1.1);
+            } 
+    }
 
-//         display: flex;
-//         width: 100px;
-//     }
+    &__container {
+        @include flex-center;
 
-//     &__search-link {
-//         color: var(--color-main-txt);
-//         text-transform: uppercase;
-//         font-weight: 600;
-//         font-size: 13px;
-//         line-height: 4.5;
-//         letter-spacing: 2.6px;
-//     }
-// }
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        padding-inline: 30px
+    }
+
+    &__box-link {
+        @include hover {
+                opacity: .7;
+                transform: scale(1.1);
+            }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 50px;
+    }
+
+    &__link {
+        @include fluid-text (13, 12);
+
+        color: var(--color-main-txt);
+        font-weight: 600;
+        line-height: 0.77;
+        letter-spacing: 2.6px;
+        text-transform: uppercase;
+
+            @include hover {
+                color: var(--color-high-accent);
+                transform: scale(1.2);
+            }
+    }
+
+    &__search {
+        @include flex-center;
+
+        display: flex;
+        column-gap: 25px;
+        width: 100px;
+
+        &-link {
+            @include fluid-text (13, 12);
+
+            color: var(--color-main-txt);
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 4.5;
+            letter-spacing: 2.6px;
+
+                @include hover {
+                color: var(--color-high-accent);
+                transform: scale(1.2);
+            }
+        }
+    }
+
+}

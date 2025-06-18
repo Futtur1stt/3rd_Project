@@ -1,0 +1,28 @@
+.link {
+    @include reset-link;
+
+    display: inline-flex;
+    align-items: center;
+    height: 75px;
+    transition-duration: var(--transition-duration);
+    text-decoration: var(--text-decor);
+
+    @include hover {
+        transition-duration: var(--transition-duration);
+    }
+
+    &:focus-visible {
+        border: 1px solid black;
+        padding: 3px;
+        transition-duration: var(--transition-duration);
+    }
+
+    &:active {
+        color: var(--color-pink);
+        transition-duration: var(--transition-duration);
+    }
+
+    @include tablet {
+        height: 50px;
+    }
+}

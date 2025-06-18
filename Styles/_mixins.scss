@@ -3,8 +3,6 @@
 }
 
 @mixin reset-link {
-  color: inherit;
-
   &,
   &:hover {
     text-decoration: none;

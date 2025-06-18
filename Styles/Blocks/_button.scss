@@ -1,0 +1,48 @@
+.button {
+    @include flex-center;
+
+    @include reset-button;
+
+    display: inline-flex;
+
+    height: var(--button-height);
+}
+
+.button--burger{
+    @include square (50px);
+
+    position: relative;
+    border-radius: var(--border-radius);
+
+    @include hover {
+        background-color: var(--color-high-accent);
+        transition-duration: var(--transition-duration);
+    }
+
+    &::after {
+        @include abs-center;
+
+        content: '';
+        width: 50%;
+        height: 2px;
+        background-color: var(--color-main);
+        box-shadow: 0 -8px 0 var(--color-main), 0 8px 0 var(--color-main);
+    }
+}
+
+// .button--cross{
+    
+// }
+
+// .button--blue {
+
+// }
+
+// .button--white {
+
+// }
+
+// .button--blue-large {
+
+// }
+
