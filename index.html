@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All smiles</title>
+
+    <link rel="icon" href="/" type="image/x-icon">
+
+    <link rel="stylesheet" href="/Styles/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__schedule">
+                <span class="header__days">
+                    Mon - Sat
+                </span>
+                <time datetime="8:00" class="header__time">8:00</time> 
+                - 
+                <time datetime="17:30" class="header__time">17:30</time>
+                <span class="header__days">
+                    Sunday - CLOSED
+                </span>
+            </div>
+            <div class="header__wrapper">
+                <ul class="header__link-list">
+                    <li class="header__link-item">
+                        <a class="header__href" href="tel:+6544715167" target="_blank">+654/4715-167</a>
+                    </li>
+                    <li class="header__link-item">
+                        <a class="header__href" href="mailto:allsmiles@qodeinteractive.com" target="_blank">allsmiles@qodeinteractive.com</a>
+                    </li>
+                    <li class="header__link-item">
+                        <a class="header__href" href="/" target="_blank">63 Wall St, New York, NY 10005</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__container">
+            <div class="header__box">
+                <a class="header__box-link" href="">
+                <img 
+                    class="header__logo"
+                    src="./Images/logo.svg" 
+                    alt="All smiles" 
+                    width="135px"
+                    height="17px"
+                    loading="lazy"
+                >
+                </a>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link" href="/" target="_self">Home</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="/" target="_self">Pages</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="/" target="_self">Staff</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="/" target="_self">Blog</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="/" target="_self">Shop</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="/" target="_self">Landing</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <a class="header__search-link" href="/" target="_blank">
+                    Search
+                </a>
+                <button class="header__button button button--burger visible-mobile" title="Open navigation menu" onclick="mobileOverlay.showModal()">
+                    <span class="visually-hidden">
+                       Open navigation menu
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="mobile-overlay__close-button button--cross" type="submit">
+                <span class="visually-hidden">
+                    Close navigation menu
+                </span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/" target="_self">Home</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/" target="_self">Pages</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/" target="_self">Staff</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/" target="_self">Blog</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/" target="_self">Shop</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/" target="_self">Landing</a>
+                </li>
+            </ul>
+        </div>
+    </dialog>
+
+</body>
+</html>

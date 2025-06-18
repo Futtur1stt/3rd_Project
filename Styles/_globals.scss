@@ -1,0 +1,26 @@
+body {
+    font-family: var(--font-family-main);
+    font-weight: 400;
+    line-height: 1.66;
+    color: var(--color-light-grey);
+    background-color: var(--color-light);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    text-decoration: var(--text-decor);
+    color: inherit;
+}
+
+h1, h2, h3, h4 {
+    color: var(--color-main-txt);
+    font-family: var(--font-family-accent);
+    font-weight: 600;
+}
