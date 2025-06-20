@@ -4,12 +4,20 @@
     background-repeat: no-repeat;
     min-height: 100vh;
 
+    @include mobile {
+        background-image: none
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
         gap: 20px;
         justify-content: space-between;
         align-items: flex-start;
+
+            @include tablet {
+                @include flex-center;
+            }
     }
 
     &__wrapper {  
@@ -45,12 +53,21 @@
 
         &-item {
             max-height: 70px;
+
+                @include mobile {
+                    text-align: center;
+                }
         }
     }
 
     &__btns {
         display: flex;
         gap: 20px;
+
+            @include mobile {
+                flex-direction: column;
+                gap: 30px;
+            }
     }
 
     &__pagination {

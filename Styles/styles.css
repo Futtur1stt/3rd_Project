@@ -780,12 +780,24 @@ h1, h2, h3, h4 {
   background-repeat: no-repeat;
   min-height: 100vh;
 }
+@media (max-width: 767px) {
+  .practice {
+    background-image: none;
+  }
+}
 .practice__container {
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: space-between;
   align-items: flex-start;
+}
+@media (max-width: 1023px) {
+  .practice__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .practice__wrapper {
   display: flex;
@@ -818,9 +830,20 @@ h1, h2, h3, h4 {
 .practice__box-item {
   max-height: 70px;
 }
+@media (max-width: 767px) {
+  .practice__box-item {
+    text-align: center;
+  }
+}
 .practice__btns {
   display: flex;
   gap: 20px;
+}
+@media (max-width: 767px) {
+  .practice__btns {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 .practice__pagination {
   display: flex;
