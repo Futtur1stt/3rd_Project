@@ -4,11 +4,52 @@
     @include reset-button;
 
     display: inline-flex;
-
     height: var(--button-height);
+
+    &__pagination {
+        width: 15px;
+        height: 15px;
+        padding: 0;
+        border-radius: 50%;
+
+        @include hover {
+            opacity: .7;
+            transition-duration: var(--transition-duration);
+        }
+
+        &:focus-visible {
+            border: var(--border);
+        }
+
+        &:active {
+            background-color: var(--color-dark);
+        }
+
+        &--red {
+            background-color: var(--color-high-accent);
+        }
+
+        &--light {
+            background-color: var(--color-light-button);
+        }
+
+        &--blue {
+            background-color: var(--color-main-txt);
+            width: 20px;
+            height: 20px;
+        }
+
+        &--light-alt {
+            background-color: var(--color-light-alt-button);
+        }
+
+        &--pink {
+            background-color: var(--color-pink);
+        }
+    }
 }
 
-.button--burger{
+.button--burger {
     @include square (50px);
 
     position: relative;
@@ -17,6 +58,14 @@
     @include hover {
         background-color: var(--color-high-accent);
         transition-duration: var(--transition-duration);
+    }
+
+    &:focus-visible {
+        border: var(--border);
+    }
+
+    &:active {
+        background-color: var(--color-dark);
     }
 
     &::after {
@@ -30,7 +79,7 @@
     }
 }
 
-.button--cross{
+.button--cross {
     @include reset-button;
     @include square (50px);
 
@@ -40,6 +89,14 @@
     @include hover {
         background-color: var(--color-high-accent);
         transition-duration: var(--transition-duration);
+    }
+
+    &:focus-visible {
+        border: var(--border);
+    }
+
+    &:active {
+        background-color: var(--color-dark);
     }
 
     &::before,
@@ -63,13 +120,49 @@
     }
 }
 
-// .button--blue {
+.button--blue,
+.button--white {
+    @include fluid-text (12, 11);
+    
+    padding: 16px 45px;
+    border-radius: var(--border-radius);
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 2;
+    letter-spacing: 2.4px;
+    width: 185px;
 
-// }
+    @include hover {
+        background-color: var(--color-low-accent);
+        transition-duration: var(--transition-duration);
+    }
 
-// .button--white {
+    &:focus-visible {
+        border: var(--border);
+    }
 
-// }
+    &:active {
+        background-color: var(--color-dark);
+    }
+}
+
+.button--blue,
+.button--blue-large {
+    background-color: var(--color-main);
+    color: var(--color-light);
+}
+
+
+.button--white {
+    background-color: var(--color-light);
+    color: var(--color-main);
+
+    @include hover {
+        color: var(--color-light);
+    }
+}
+
+
 
 // .button--blue-large {
 

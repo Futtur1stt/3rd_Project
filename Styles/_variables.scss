@@ -1,5 +1,6 @@
 :root {
     --color-light: #FFFFFF;
+    --color-dark: #000000;
     --color-main: #2E3192;
     --color-main-txt: #1E2D78;
     --color-high-accent: #F4572E;
@@ -12,11 +13,12 @@
     --color-light-alt-button: #FECBCB;
 
     --border-radius: 5px;
+    --border: 1px solid var(--color-dark);
 
     --font-family-main: 'Open Sans', sans-serif;
     --font-family-accent: 'Catamaran', sans-serif;
 
-    --transition-duration: 0.3s;
+    --transition-duration: 0.4s;
 
     --text-decor: none;
 

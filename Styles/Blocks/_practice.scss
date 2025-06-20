@@ -1,0 +1,67 @@
+.practice {
+    background-image: url("/Images/Practice.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__wrapper {  
+        @include flex-center;
+        
+        background-color: var(--color-high-accent);
+        height: 30px;
+        width: 170px;
+        border-radius: var(--border-radius);
+        margin-top: 30px;
+    }
+
+    &__title {
+        @include fluid-text (13, 12);
+
+        color: var(--color-light);
+        font-weight: 600;
+        line-height: 1.77;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    &__box {
+        @include fluid-text (65, 35);
+
+        max-width: 560px;
+        background-color: var(--color-light);
+        color: var(--color-main-txt);
+        font-family: var(--font-family-accent);
+        font-weight: 600;
+        line-height: 1.18;
+        border-radius: var(--border-radius); 
+
+        &-item {
+            max-height: 70px;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__pagination {
+        @include flex-center;
+
+        margin-top: 150px;
+
+        &-list {
+            @include flex-center;
+
+            gap: 15px;
+        }
+    }
+}

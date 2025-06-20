@@ -6,7 +6,6 @@
     &__inner {
         @include flex-center;
 
-        display: flex;
         background-color: var(--color-main);
         color: var(--color-light);
         height: 40px;
@@ -29,7 +28,6 @@
         @include flex-center;
 
         position: relative;
-        display: flex;
         gap: 5px;
         font-weight: 400;
         line-height: 1.67;
@@ -55,7 +53,6 @@
     &__link-list {
         @include flex-center;
 
-        display: flex;
         column-gap: 70px;
 
             @include mobile {
@@ -107,7 +104,6 @@
     &__container {
         @include flex-center;
 
-        display: flex;
         justify-content: space-between;
         height: 100px;
         padding-inline: 30px;
@@ -153,7 +149,6 @@
     &__search {
         @include flex-center;
 
-        display: flex;
         column-gap: 25px;
         width: 100px;
 

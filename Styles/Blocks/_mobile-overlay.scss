@@ -25,6 +25,7 @@
 
     &__link {
         @include fluid-text (30, 25);
+        
         color: var(--color-main-txt);
         font-weight: 600;
         line-height: 0.77;
