@@ -152,13 +152,27 @@
     color: var(--color-light);
 }
 
-
 .button--white {
     background-color: var(--color-light);
     color: var(--color-main);
 
     @include hover {
         color: var(--color-light);
+    }
+}
+
+.button--blue-large {
+    @include hover {
+        background-color: var(--color-low-accent);
+        transition-duration: var(--transition-duration);
+    }
+
+    &:focus-visible {
+        border: var(--border);
+    }
+
+    &:active {
+        background-color: var(--color-dark);
     }
 }
 

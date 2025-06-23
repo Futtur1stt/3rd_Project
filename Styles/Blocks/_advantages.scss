@@ -3,6 +3,27 @@
         display: grid;
         grid-template-columns: repeat(3, 435px);
         gap: 10px;
+        align-items: center;
+        justify-content: center;
+
+        @include desktop-s {
+            display: grid;
+            grid-template-columns: repeat(2, 435px);
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @include tablet {
+            grid-template-columns: repeat(1, 435px);
+            padding-inline: 10px;
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(1, 300px);
+            text-align: center;
+            gap: 15px;
+        }
     }
 
     &__box {
@@ -54,6 +75,10 @@
                     height: 10px;
                     left: 0;
             }
+
+            @include mobile {
+                padding-left: 10px;
+            }
         }
     }
 
@@ -62,6 +87,17 @@
         flex-direction: column;
         gap: 20px;
 
+        @include desktop-s {
+            grid-column: 1 / 3;
+        }
+
+        @include tablet {
+            grid-column: 1 / 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
         &-title {
             @include fluid-text (35, 25);
 
@@ -69,6 +105,10 @@
             font-weight: 600;
             line-height: 0.7;
             text-align: center;
+
+                @include mobile {
+                    margin-top: 40px;
+                }
         }
 
         &-list {
@@ -97,6 +137,19 @@
                     height: 1px;
                     width: 180px;
                     background: repeating-linear-gradient(to right, var(--color-low-accent), var(--color-low-accent) 7px, transparent 1px, transparent 10px);
+
+                    @include desktop-s {
+                        width: 650px;
+                    }
+
+                    @include tablet {
+                        width: 160px;
+                    }
+
+                    @include mobile {
+                        left: 94px;
+                        width: 120px
+                    }
                 }
             }
         }

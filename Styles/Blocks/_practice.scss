@@ -6,7 +6,8 @@
     max-height: 650px;
 
     @include mobile {
-        background-image: none
+        background-image: none;
+        max-height: 450px;
     }
 
     &__container {
