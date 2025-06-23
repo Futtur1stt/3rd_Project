@@ -1,0 +1,27 @@
+.services {
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        gap: 30px;
+
+        &-item {
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__title {
+        @include fluid-text (19, 17);
+
+        font-weight: 600;
+        line-height: 1.3;
+    }
+}
