@@ -498,6 +498,52 @@ h1, h2, h3, h4 {
   }
 }
 
+.button--curcle {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border: 1px, dashed, var(--color-main-txt);
+  border-radius: 50%;
+  background-color: transparent;
+}
+@media (hover: hover) {
+  .button--curcle:hover {
+    background-color: var(--color-main-txt);
+    transition-duration: var(--transition-duration);
+  }
+  .button--curcle:hover::before {
+    border-right: 2px solid var(--color-light);
+    border-bottom: 2px solid var(--color-light);
+  }
+}
+@media (hover: none) {
+  .button--curcle:active {
+    background-color: var(--color-main-txt);
+    transition-duration: var(--transition-duration);
+  }
+  .button--curcle:active::before {
+    border-right: 2px solid var(--color-light);
+    border-bottom: 2px solid var(--color-light);
+  }
+}
+.button--curcle:focus-visible {
+  border: var(--border);
+}
+.button--curcle:active {
+  background-color: var(--color-dark);
+}
+.button--curcle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--color-main-txt);
+  border-bottom: 2px solid var(--color-main-txt);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 .link {
   display: inline-flex;
   align-items: center;
@@ -774,11 +820,50 @@ h1, h2, h3, h4 {
   }
 }
 
+.section__margin {
+  margin-top: 100px;
+}
+@media (max-width: 1280px) {
+  .section__margin {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 1023px) {
+  .section__margin {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .section__margin {
+    margin-top: 30px;
+  }
+}
+.section__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.section__description {
+  font-size: clamp(14px, 0.78125vw, 15px);
+  font-weight: 400;
+  line-height: 1.66;
+}
+.section__link {
+  font-size: clamp(11px, 0.625vw, 12px);
+  color: var(--color-main-txt);
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
 .practice {
   background-image: url("/Images/Practice.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 650px;
 }
 @media (max-width: 767px) {
   .practice {
@@ -856,4 +941,100 @@ h1, h2, h3, h4 {
   justify-content: center;
   align-items: center;
   gap: 15px;
+}
+
+.advantages__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 435px);
+  gap: 10px;
+}
+.advantages__box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.advantages__box-img {
+  border-radius: var(--border-radius);
+}
+.advantages__heading {
+  font-size: clamp(25px, 1.40625vw, 27px);
+  font-weight: 600;
+  line-height: 1.3;
+}
+.advantages__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.advantages__container-img {
+  border-radius: var(--border-radius);
+}
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.advantages__list-item {
+  font-size: clamp(13px, 0.78125vw, 15px);
+  position: relative;
+  height: 25px;
+  font-weight: 400;
+  line-height: 1.66;
+  padding-left: 25px;
+}
+.advantages__list-item ::before {
+  position: absolute;
+  content: "+";
+  color: var(--color-low-accent);
+  width: 10px;
+  height: 10px;
+  left: 0;
+}
+.advantages__schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.advantages__schedule-title {
+  font-size: clamp(25px, 1.8229166667vw, 35px);
+  margin-top: 70px;
+  font-weight: 600;
+  line-height: 0.7;
+  text-align: center;
+}
+.advantages__schedule-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.advantages__schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.advantages__schedule-item ::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 13px;
+  left: 135px;
+  content: "";
+  height: 1px;
+  width: 180px;
+  background: repeating-linear-gradient(to right, var(--color-low-accent), var(--color-low-accent) 7px, transparent 1px, transparent 10px);
+}
+.advantages__day, .advantages__time {
+  font-size: clamp(13px, 0.78125vw, 15px);
+}
+.advantages__time {
+  text-transform: uppercase;
+}
+.advantages__link {
+  margin-top: auto;
 }/*# sourceMappingURL=styles.css.map */

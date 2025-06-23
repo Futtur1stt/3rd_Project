@@ -162,7 +162,43 @@
     }
 }
 
-// .button--blue-large {
+.button--curcle {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border: 1px, dashed, var(--color-main-txt);
+    border-radius: 50%;
+    background-color: transparent;
 
-// }
+    @include hover {
+        background-color: var(--color-main-txt);
+        transition-duration: var(--transition-duration);
+
+        &::before {
+            border-right: 2px solid var(--color-light);
+            border-bottom: 2px solid var(--color-light);
+        }
+    }
+
+    &:focus-visible {
+        border: var(--border);
+    }
+
+    &:active {
+        background-color: var(--color-dark);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid var(--color-main-txt);
+        border-bottom: 2px solid var(--color-main-txt);
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
+
 

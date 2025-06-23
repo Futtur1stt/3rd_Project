@@ -2,7 +2,8 @@
     background-image: url("/Images/Practice.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 650px;
 
     @include mobile {
         background-image: none

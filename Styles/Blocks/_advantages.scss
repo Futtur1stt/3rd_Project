@@ -1,0 +1,118 @@
+.advantages {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 435px);
+        gap: 10px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &-img {
+            border-radius: var(--border-radius);
+        }
+    }
+
+    &__heading {
+        @include fluid-text (27, 25);
+
+        font-weight: 600;
+        line-height: 1.3;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        &-img {
+            border-radius: var(--border-radius);
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &-item {
+            @include fluid-text (15, 13);
+            
+            position: relative;
+            height: 25px;
+            font-weight: 400;
+            line-height: 1.66;
+            padding-left: 25px;
+
+                ::before {
+                    position: absolute;
+                    content: '+';
+                    color: var(--color-low-accent);
+                    width: 10px;
+                    height: 10px;
+                    left: 0;
+            }
+        }
+    }
+
+    &__schedule {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &-title {
+            @include fluid-text (35, 25);
+
+            margin-top: 70px;
+            font-weight: 600;
+            line-height: 0.7;
+            text-align: center;
+        }
+
+        &-list {
+            @include flex-center;
+
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            position: relative;
+
+            ::before {
+                    @include flex-center;
+
+                    position: absolute;
+                    top: 13px;
+                    left: 135px;
+                    content: "";
+                    height: 1px;
+                    width: 180px;
+                    background: repeating-linear-gradient(to right, var(--color-low-accent), var(--color-low-accent) 7px, transparent 1px, transparent 10px);
+                }
+            }
+        }
+
+    &__day,
+    &__time {
+        @include fluid-text (15, 13);
+    }
+
+    &__time {
+        text-transform: uppercase;
+    }
+
+    &__link {
+        margin-top: auto;
+    }
+
+
+}
