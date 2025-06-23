@@ -1,9 +1,18 @@
 .services {
-
     &__list {
         display: grid;
         grid-template-columns: repeat(3, 400px);
         gap: 30px;
+
+        @include desktop {
+            grid-template-columns: repeat(2, 350px);
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(1, 350px);
+        }
 
         &-item {
             display: flex;

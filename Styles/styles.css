@@ -864,7 +864,7 @@ h1, h2, h3, h4 {
 }
 @media (max-width: 480px) {
   .section__margin {
-    margin-top: 15px;
+    margin-top: 20px;
   }
 }
 .section__wrapper {
@@ -1159,6 +1159,18 @@ h1, h2, h3, h4 {
   display: grid;
   grid-template-columns: repeat(3, 400px);
   gap: 30px;
+}
+@media (max-width: 1280px) {
+  .services__list {
+    grid-template-columns: repeat(2, 350px);
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .services__list {
+    grid-template-columns: repeat(1, 350px);
+  }
 }
 .services__list-item {
   display: flex;
