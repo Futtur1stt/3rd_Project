@@ -1,0 +1,11 @@
+.pagination {
+        @include flex-center;
+
+        margin-top: 150px;
+
+        &-list {
+            @include flex-center;
+
+            gap: 15px;
+        }
+}

@@ -64,4 +64,31 @@
         }
     }
 
+    &__box {
+        @include flex-center;
+
+        flex-direction: column;
+        text-align: center;   
+        gap: 10px;     
+    }
+
+    &__title {
+        @include fluid-text (13, 11);
+
+        font-family: var(--font-family-base);
+        font-weight: 600;
+        line-height: 1.9;
+        letter-spacing: 1.69px;
+        color: var(--color-low-accent);
+        text-transform: uppercase;
+    }
+
+    &__heading {
+        @include fluid-text (52, 35);
+
+        font-weight: 600;
+        line-height: 1.15;
+        color: var(--color-main-txt);
+    }
+
 }

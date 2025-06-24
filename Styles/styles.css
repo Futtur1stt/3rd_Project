@@ -353,8 +353,6 @@ h1, h2, h3, h4 {
 }
 .button__pagination--blue {
   background-color: var(--color-main-txt);
-  width: 20px;
-  height: 20px;
 }
 .button__pagination--light-alt {
   background-color: var(--color-light-alt-button);
@@ -839,6 +837,19 @@ h1, h2, h3, h4 {
   }
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.pagination-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
 .section__margin {
   margin-top: 100px;
 }
@@ -908,6 +919,29 @@ h1, h2, h3, h4 {
 }
 .section__link:active {
   color: var(--color-dark);
+}
+.section__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+.section__title {
+  font-size: clamp(11px, 0.6770833333vw, 13px);
+  font-family: var(--font-family-base);
+  font-weight: 600;
+  line-height: 1.9;
+  letter-spacing: 1.69px;
+  color: var(--color-low-accent);
+  text-transform: uppercase;
+}
+.section__heading {
+  font-size: clamp(35px, 2.7083333333vw, 52px);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--color-main-txt);
 }
 
 .practice {
@@ -982,18 +1016,6 @@ h1, h2, h3, h4 {
     flex-direction: column;
     gap: 30px;
   }
-}
-.practice__pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 150px;
-}
-.practice__pagination-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
 }
 
 .advantages__wrapper {
@@ -1242,4 +1264,35 @@ h1, h2, h3, h4 {
   display: flex;
   margin-left: auto;
   padding-right: 10px;
+}
+
+.personal__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.personal__list-item {
+  text-align: center;
+}
+.personal__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.personal__title {
+  font-size: clamp(25px, 1.40625vw, 27px);
+  font-weight: 600;
+  line-height: 1.3;
+}
+.personal__author {
+  font-size: clamp(11px, 0.6770833333vw, 13px);
+  font-weight: 600;
+  line-height: 1.9;
+  color: var(--color-low-accent);
+  text-transform: uppercase;
+}
+.personal__pagination {
+  margin-top: 50px;
 }/*# sourceMappingURL=styles.css.map */
