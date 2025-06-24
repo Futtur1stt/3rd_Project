@@ -1,0 +1,45 @@
+.health {
+    display: flex;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding-left: 50px;
+    }
+
+    &__title {
+        @include fluid-text (13, 11);
+
+        font-family: var(--font-family-main);
+        font-weight: 600;
+        line-height: 1.92;
+        letter-spacing: 1.69px;
+        color: var(--color-low-accent);
+        text-transform: uppercase;
+
+        &-mini {
+            @include fluid-text (42, 30);
+
+            font-weight: 600;
+            line-height: 1.1;
+            color: var(--color-main-txt);
+        }
+    }
+
+    &__author {
+        @include fluid-text (20, 18);
+
+        font-family: var(--font-family-accent);
+        font-weight: 600;
+        line-height: 1.65;
+        color: var(--color-high-accent);
+    }
+
+    &__container {
+        display: flex;
+        margin-left: auto;
+        padding-right: 10px;
+    }
+}
