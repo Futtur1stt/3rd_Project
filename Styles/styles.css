@@ -928,6 +928,11 @@ h1, h2, h3, h4 {
   text-align: center;
   gap: 10px;
 }
+@media (max-width: 1023px) {
+  .section__box {
+    margin-top: 15px;
+  }
+}
 .section__title {
   font-size: clamp(11px, 0.6770833333vw, 13px);
   font-family: var(--font-family-base);
@@ -1270,8 +1275,16 @@ h1, h2, h3, h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 50px;
+}
+@media (max-width: 1023px) {
+  .personal__list {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
 .personal__list-item {
+  display: flex;
   text-align: center;
 }
 .personal__card {

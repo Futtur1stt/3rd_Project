@@ -69,7 +69,11 @@
 
         flex-direction: column;
         text-align: center;   
-        gap: 10px;     
+        gap: 10px;
+        
+        @include tablet {
+            margin-top: 15px;
+        }
     }
 
     &__title {
