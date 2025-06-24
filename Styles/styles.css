@@ -1191,12 +1191,30 @@ h1, h2, h3, h4 {
 .health {
   display: flex;
 }
+@media (max-width: 1023px) {
+  .health {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 .health__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 15px;
-  padding-left: 50px;
+  padding-left: 70px;
+  padding-right: 20px;
+}
+@media (max-width: 1023px) {
+  .health__wrapper {
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .health__wrapper {
+    margin-top: 20px;
+  }
 }
 .health__title {
   font-size: clamp(11px, 0.6770833333vw, 13px);

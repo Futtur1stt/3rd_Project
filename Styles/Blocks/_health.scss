@@ -1,12 +1,27 @@
 .health {
     display: flex;
 
+    @include tablet {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 15px;
-        padding-left: 50px;
+        padding-left: 70px;
+        padding-right: 20px;
+
+        @include tablet {
+            align-items: center;
+            text-align: center; 
+        }
+
+        @include mobile {
+            margin-top: 20px;
+        }
     }
 
     &__title {
