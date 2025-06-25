@@ -3,6 +3,15 @@
         display: grid;
         grid-template-columns: repeat(2, 310px);
         gap: 30px;
+
+        @include desktop {
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(1, 310px);
+        }
     }
 
     &__input {
@@ -11,5 +20,15 @@
 
     &__btn {
         margin-top: 60px;
+
+        @include desktop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include mobile {
+            margin-top: 40px;
+        }
     }
 }
