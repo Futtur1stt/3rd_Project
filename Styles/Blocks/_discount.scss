@@ -2,17 +2,32 @@
     background-color: var(--color-main);
     height: 220px;
 
+    @include tablet {
+            height: auto;
+        }
+
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
+
+        @include tablet {
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+        }
     }
 
     &__wrapper {
         display: flex;
         flex-direction: column;
         gap: 10px;
+
+        @include tablet {
+            margin-top: 15px;
+            gap: 20px;
+        }
     }
 
     &__title {
@@ -37,6 +52,10 @@
 
     &__btn {
         @include flex-center;
+
+        @include tablet {
+            margin-bottom: 15px;
+        }
     }
 
     &__button {

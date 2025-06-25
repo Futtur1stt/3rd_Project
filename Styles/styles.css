@@ -1314,16 +1314,34 @@ h1, h2, h3, h4 {
   background-color: var(--color-main);
   height: 220px;
 }
+@media (max-width: 1023px) {
+  .discount {
+    height: auto;
+  }
+}
 .discount__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
+@media (max-width: 1023px) {
+  .discount__container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
 .discount__wrapper {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media (max-width: 1023px) {
+  .discount__wrapper {
+    margin-top: 15px;
+    gap: 20px;
+  }
 }
 .discount__title {
   font-size: clamp(30px, 1.8229166667vw, 35px);
@@ -1344,6 +1362,11 @@ h1, h2, h3, h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 1023px) {
+  .discount__btn {
+    margin-bottom: 15px;
+  }
 }
 .discount__button {
   width: 200px;
