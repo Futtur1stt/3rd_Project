@@ -1308,4 +1308,43 @@ h1, h2, h3, h4 {
 }
 .personal__pagination {
   margin-top: 50px;
+}
+
+.discount {
+  background-color: var(--color-main);
+  height: 220px;
+}
+.discount__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.discount__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.discount__title {
+  font-size: clamp(30px, 1.8229166667vw, 35px);
+  color: var(--color-light);
+  font-weight: 600;
+  line-height: 1.25;
+}
+.discount__sale {
+  color: var(--color-high-accent);
+}
+.discount__description {
+  font-size: clamp(17px, 0.9895833333vw, 19px);
+  color: var(--color-light);
+  font-weight: 400;
+  line-height: 1.58;
+}
+.discount__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.discount__button {
+  width: 200px;
 }/*# sourceMappingURL=styles.css.map */

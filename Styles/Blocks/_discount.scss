@@ -1,0 +1,45 @@
+.discount {
+    background-color: var(--color-main);
+    height: 220px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__title {
+        @include fluid-text (35, 30);
+
+        color: var(--color-light);
+        font-weight: 600;
+        line-height: 1.25;
+    }
+
+    &__sale {
+        color: var(--color-high-accent);
+    }
+
+    &__description {
+        @include fluid-text (19, 17);
+
+        color: var(--color-light);
+        font-weight: 400;
+        line-height: 1.58;
+    }
+
+    &__btn {
+        @include flex-center;
+    }
+
+    &__button {
+        width: 200px;
+    }
+}
