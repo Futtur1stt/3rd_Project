@@ -74,6 +74,10 @@
         @include tablet {
             margin-top: 15px;
         }
+
+        @include mobile {
+            margin-top: 30px;
+        }
     }
 
     &__title {

@@ -937,6 +937,11 @@ h1, h2, h3, h4 {
     margin-top: 15px;
   }
 }
+@media (max-width: 767px) {
+  .section__box {
+    margin-top: 30px;
+  }
+}
 .section__title {
   font-size: clamp(11px, 0.6770833333vw, 13px);
   font-family: var(--font-family-base);
@@ -1686,6 +1691,12 @@ h1, h2, h3, h4 {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+@media (max-width: 1023px) {
+  .news__list {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .news__item {
   display: flex;
