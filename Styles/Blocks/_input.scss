@@ -1,0 +1,23 @@
+.input {
+    border: 1px solid transparent;
+    border-radius: var(--border-radius);
+
+    @include hover {
+        color: var(--color-light);
+        background-color: var(--color-main);
+        transition-duration: var(--transition-duration);
+    }
+
+    &:focus-visible {
+        border: var(--border);
+    }
+
+    ::placeholder {
+        @include fluid-text (15, 13);
+
+        color: var(--color-light-grey);
+        font-family: var(--font-family-main);
+        font-weight: 400;
+        line-height: auto;
+    }
+}

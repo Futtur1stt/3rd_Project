@@ -1,0 +1,15 @@
+.form {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 310px);
+        gap: 30px;
+    }
+
+    &__input {
+        padding: 22px 15px 22px 15px;
+    }
+
+    &__btn {
+        margin-top: 60px;
+    }
+}
