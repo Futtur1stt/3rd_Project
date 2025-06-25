@@ -760,6 +760,72 @@
                 </ul>
             </div>
         </section>
+        <section class="section section__margin registration">
+            <h2 class="visually-hidden">
+                Registration section
+            </h2>
+            <div class="registration__box hidden-mobile">
+                <img 
+                    class="registration__photo"
+                    src="./Images/registration/1.jpg" 
+                    alt="A dentist who treats a girl's teeth" 
+                    width="1015px"
+                    height="715px"
+                    loading="lazy"
+                >
+            </div>
+            <div class="registration__wrapper">
+                <h3 class="registration__title">
+                    Request an Appointment
+                </h3>
+                <div class="registration__description">
+                    <p>
+                        Proin gravida nibh vel velit auctor aliquet justo.
+                    </p>
+                </div>
+                <form class="form registration__form" action="/">
+                    <label class="visually-hidden" for="name">First Name</label>
+                    <input 
+                        class="input form__input registration__input" 
+                        id="name"
+                        type="text"
+                        placeholder="First Name" 
+                        required
+                        autocomplete="on"
+                    >
+                    <label class="visually-hidden" for="surname">Last Name</label>
+                    <input 
+                        class="input form__input registration__input" 
+                        id="surname"
+                        type="text"
+                        placeholder="Last Name" 
+                        required
+                        autocomplete="on"
+                    >
+                    <label class="visually-hidden" for="email">Email</label>
+                    <input 
+                        class="input form__input registration__input" 
+                        id="email"
+                        type="email"
+                        placeholder="E-Mail Adress" 
+                        required
+                        autocomplete="on"
+                    >
+                    <label class="visually-hidden" for="number">Phone Number</label>
+                    <input 
+                        class="input form__input registration__input" 
+                        id="number"
+                        type="tel"
+                        placeholder="Phone Number" 
+                        required
+                        autocomplete="on"
+                    >
+                    <button class="button button--blue" title="Send request" type="submit">
+                        Send request
+                    </button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
