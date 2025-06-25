@@ -2,6 +2,7 @@
     &__list {
         @include flex-center;
         gap: 50px;
+        margin-top: 10px;
 
         @include tablet {
             flex-direction: column;
