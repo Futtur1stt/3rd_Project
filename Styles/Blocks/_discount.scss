@@ -3,8 +3,8 @@
     height: 220px;
 
     @include tablet {
-            height: auto;
-        }
+        height: auto;
+    }
 
     &__container {
         display: flex;
@@ -17,6 +17,10 @@
             text-align: center;
             gap: 20px;
         }
+
+        @include mobile {
+            gap: 30px;
+        }
     }
 
     &__wrapper {
@@ -27,6 +31,10 @@
         @include tablet {
             margin-top: 15px;
             gap: 20px;
+        }
+
+        @include mobile {
+            gap: 30px;
         }
     }
 

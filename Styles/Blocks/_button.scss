@@ -44,6 +44,11 @@
         &--pink {
             background-color: var(--color-pink);
         }
+
+        &--big {
+            width: 20px;
+            height: 20px;
+        }
     }
 }
 
