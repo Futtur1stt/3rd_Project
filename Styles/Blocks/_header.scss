@@ -65,7 +65,7 @@
 
         &:first-child::before {
             position: absolute;
-            content: url("/Icons/Phone.svg");
+            content: url("../Icons/Phone.svg");
             top: 37%;
             left: -30%;
 
@@ -77,7 +77,7 @@
 
         &:last-child:before {
             position: absolute;
-            content: url("/Icons/Location.svg");
+            content: url("../Icons/Location.svg");
             top: 33%;
             left: -12%;
 

@@ -702,7 +702,7 @@ h1, h2, h3, h4 {
 }
 .header__link-item:first-child::before {
   position: absolute;
-  content: url("/Icons/Phone.svg");
+  content: url("../Icons/Phone.svg");
   top: 37%;
   left: -30%;
 }
@@ -714,7 +714,7 @@ h1, h2, h3, h4 {
 }
 .header__link-item:last-child:before {
   position: absolute;
-  content: url("/Icons/Location.svg");
+  content: url("../Icons/Location.svg");
   top: 33%;
   left: -12%;
 }
@@ -1291,6 +1291,18 @@ h1, h2, h3, h4 {
 .personal__item {
   display: flex;
   text-align: center;
+  position: relative;
+}
+.personal__item::after {
+  position: absolute;
+  content: url("../Icons/99.svg");
+  top: 15px;
+  left: 240px;
+}
+@media (max-width: 1023px) {
+  .personal__item::after {
+    left: 230px;
+  }
 }
 .personal__card {
   display: flex;
@@ -1503,4 +1515,55 @@ h1, h2, h3, h4 {
 }
 .treatment__description {
   color: var(--color-dark-grey);
+}
+
+.experts__list {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 50px;
+  margin-top: 30px;
+}
+@media (max-width: 1400px) {
+  .experts__list {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 300px);
+    gap: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .experts__list {
+    grid-template-columns: repeat(1, 300px);
+  }
+}
+.experts__item {
+  position: relative;
+}
+.experts__item::after {
+  position: absolute;
+  content: url("../Icons/More.svg");
+  top: 15px;
+  left: -15px;
+}
+.experts__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 30px;
+  text-align: center;
+}
+.experts__name {
+  font-size: clamp(17px, 0.9895833333vw, 19px);
+  font-family: var(--font-family-accent);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-main-txt);
+}
+.experts__role {
+  font-size: clamp(11px, 0.6770833333vw, 13px);
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 1.69px;
+  text-transform: uppercase;
+  color: var(--color-low-accent);
 }/*# sourceMappingURL=styles.css.map */
