@@ -847,7 +847,7 @@ h1, h2, h3, h4 {
   align-items: center;
   margin-top: 150px;
 }
-.pagination-list {
+.pagination__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1203,7 +1203,7 @@ h1, h2, h3, h4 {
     grid-template-columns: repeat(1, 350px);
   }
 }
-.services__list-item {
+.services__item {
   display: flex;
   gap: 20px;
 }
@@ -1288,7 +1288,7 @@ h1, h2, h3, h4 {
     gap: 25px;
   }
 }
-.personal__list-item {
+.personal__item {
   display: flex;
   text-align: center;
 }

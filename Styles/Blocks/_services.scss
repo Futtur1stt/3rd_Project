@@ -13,11 +13,11 @@
         @include mobile {
             grid-template-columns: repeat(1, 350px);
         }
+    }
 
-        &-item {
-            display: flex;
-            gap: 20px;
-        }
+    &__item {
+        display: flex;
+        gap: 20px;
     }
 
     &__wrapper {

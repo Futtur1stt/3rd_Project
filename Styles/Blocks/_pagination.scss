@@ -3,9 +3,9 @@
 
         margin-top: 150px;
 
-        &-list {
-            @include flex-center;
+    &__list {
+        @include flex-center;
 
-            gap: 15px;
-        }
+        gap: 15px;
+    }
 }

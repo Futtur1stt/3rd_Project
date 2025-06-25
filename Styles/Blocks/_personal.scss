@@ -8,11 +8,11 @@
             flex-direction: column;
             gap: 25px;
         }
+    }
 
-        &-item {
-            display: flex;
-            text-align: center;
-        }
+    &__item {
+        display: flex;
+        text-align: center;
     }
 
     &__card {
