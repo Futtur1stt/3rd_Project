@@ -1,0 +1,35 @@
+.news {
+    &__wrapper {
+        margin-top: 40px;
+    }
+
+    &__list {
+        @include flex-center;
+
+        gap: 20px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__time,
+    &__type {
+        @include fluid-text (13, 11);
+
+        font-weight: 600;
+        line-height: 1.9;
+        letter-spacing: 1,69px;
+        color: var(--color-low-accent);
+        text-transform: uppercase;
+    }
+
+    &__title {
+        @include fluid-text (27, 25);
+
+        font-weight: 600;
+        line-height: 1.3;
+    }
+}
