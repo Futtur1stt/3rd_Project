@@ -1726,6 +1726,20 @@ h1, h2, h3, h4 {
   grid-template-columns: repeat(6, 140px);
   justify-content: space-around;
   align-items: center;
+  gap: 10px;
+}
+@media (max-width: 1023px) {
+  .footer__list {
+    grid-template-columns: repeat(3, 140px);
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__list {
+    grid-template-columns: repeat(2, 140px);
+    gap: 15px;
+    margin-top: 40px;
+  }
 }
 @media (hover: hover) {
   .footer__link:hover {

@@ -7,6 +7,18 @@
         grid-template-columns: repeat(6, 140px);
         justify-content: space-around;
         align-items: center;
+        gap: 10px;
+
+        @include tablet {
+            grid-template-columns: repeat(3, 140px);
+            gap: 20px;
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(2, 140px);
+            gap: 15px;
+            margin-top: 40px;
+        }
     }
 
     &__link {
