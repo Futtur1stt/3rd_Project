@@ -1,0 +1,26 @@
+.footer {
+    height: 130px;
+
+    &__list {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 140px);
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__link {
+        @include hover {
+            transform: scale(1.2);
+            transition-duration: var(--transition-duration);
+        }
+
+        &:focus-visible {
+            border: var(--border);
+        }
+
+        &:active {
+            opacity: .7;
+        }
+    }
+}
