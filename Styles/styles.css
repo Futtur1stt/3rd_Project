@@ -229,21 +229,21 @@ h1, h2, h3, h4 {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/Fonts/OpenSans-SemiBold.woff2") format("woff2");
+  src: url("../Fonts/OpenSans-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("/Fonts/OpenSans-Regular.woff2") format("woff2");
+  src: url("../Fonts/OpenSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Catamaran";
-  src: url("/Fonts/Catamaran-SemiBold.woff2") format("woff2");
+  src: url("../Fonts/Catamaran-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -1004,22 +1004,21 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 .practice__box {
-  font-size: clamp(35px, 3.3854166667vw, 65px);
-  max-width: 560px;
+  max-width: 590px;
   background-color: var(--color-light);
-  color: var(--color-main-txt);
-  font-family: var(--font-family-accent);
-  font-weight: 600;
-  line-height: 1.18;
   border-radius: var(--border-radius);
-}
-.practice__box-item {
-  max-height: 70px;
 }
 @media (max-width: 767px) {
   .practice__box-item {
     text-align: center;
   }
+}
+.practice__line {
+  font-size: clamp(35px, 2.34375vw, 45px);
+  color: var(--color-main-txt);
+  font-family: var(--font-family-accent);
+  font-weight: 600;
+  line-height: 1.18;
 }
 .practice__btns {
   display: flex;
@@ -1250,6 +1249,8 @@ h1, h2, h3, h4 {
 @media (max-width: 767px) {
   .health__wrapper {
     margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 .health__title {
@@ -1737,7 +1738,7 @@ h1, h2, h3, h4 {
 @media (max-width: 767px) {
   .footer__list {
     grid-template-columns: repeat(2, 140px);
-    gap: 15px;
+    gap: 45px;
     margin-top: 40px;
   }
 }
