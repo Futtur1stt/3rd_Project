@@ -21,7 +21,8 @@
 
         @include mobile {
             margin-top: 20px;
-            padding-inline: 15px;
+            padding-left: none;
+            padding-right: none;
         }
     }
 
