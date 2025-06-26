@@ -43,23 +43,26 @@
     }
 
     &__box {
-        @include fluid-text (60, 35);
-
-        max-width: 560px;
+        max-width: 580px;
         background-color: var(--color-light);
-        color: var(--color-main-txt);
-        font-family: var(--font-family-accent);
-        font-weight: 600;
-        line-height: 1.18;
         border-radius: var(--border-radius); 
 
         &-item {
-            max-height: 70px;
+            max-height: 80px;
 
                 @include mobile {
                     text-align: center;
                 }
         }
+    }
+
+    &__line {
+        @include fluid-text (50, 35);
+
+        color: var(--color-main-txt);
+        font-family: var(--font-family-accent);
+        font-weight: 600;
+        line-height: 1.18;
     }
 
     &__btns {
