@@ -1004,9 +1004,14 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 .practice__box {
+  font-size: clamp(35px, 3.3854166667vw, 50px);
+  max-width: 560px;
   max-width: 590px;
   background-color: var(--color-light);
   border-radius: var(--border-radius);
+}
+.practice__box-item {
+  max-height: 80px;
 }
 @media (max-width: 767px) {
   .practice__box-item {
