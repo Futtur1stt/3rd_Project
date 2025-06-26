@@ -43,7 +43,7 @@
     }
 
     &__box {
-        @include fluid-text (65, 35);
+        @include fluid-text (60, 35);
 
         max-width: 560px;
         background-color: var(--color-light);
