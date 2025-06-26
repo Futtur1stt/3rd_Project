@@ -48,11 +48,9 @@
         border-radius: var(--border-radius); 
 
         &-item {
-            max-height: 80px;
-
-                @include mobile {
-                    text-align: center;
-                }
+            @include mobile {
+                text-align: center;
+            }
         }
     }
 
