@@ -16,7 +16,7 @@
 
         @include mobile {
             grid-template-columns: repeat(2, 140px);
-            gap: 30px;
+            gap: 40px;
             margin-top: 40px;
         }
     }
