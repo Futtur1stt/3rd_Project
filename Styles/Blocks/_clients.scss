@@ -1,4 +1,4 @@
-.personal {
+.clients {
     &__list {
         @include flex-center;
         gap: 50px;
@@ -31,9 +31,7 @@
         @include flex-center;
 
         flex-direction: column;
-        gap: 10px;
-
-        
+        gap: 10px;    
     }
 
     &__title {

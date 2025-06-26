@@ -110,10 +110,10 @@
                     </ul>
                 </div>
                 <div class="practice__btns">
-                    <button class="button button--blue" title="View more">
+                    <button class="button button--blue" title="View more" type="button">
                         View more
                     </button>
-                    <button class="button button--white" title="Purchase">
+                    <button class="button button--white" title="Purchase" type="button">
                         Purchase
                     </button>
                 </div>
@@ -168,7 +168,7 @@
                         Pick the dentist that fits all your</br>
                         needs the best
                     </h2>
-                    <div class="section__description advantages__description">
+                    <div class="section__description">
                         <p>
                             Lorem ipsum dolor sit amet, eu duo ferri labor. Mea ex</br>
                             modo reque senserit, et sed hinc dolor, scaevola sum</br>
@@ -467,7 +467,7 @@
                 </video>
             </div>
         </section>
-        <section class="section section__margin personal">
+        <section class="section section__margin clients">
             <div class="container">
                 <div class="section__box">
                     <h2 class="section__title">
@@ -482,84 +482,84 @@
                         </p>
                     </div>
                 </div>
-                <ul class="personal__list">
-                    <li class="personal__item">
-                        <article class="personal__card">
+                <ul class="clients__list">
+                    <li class="clients__item">
+                        <article class="clients__card">
                             <img 
-                                class="personal__avatar"
-                                src="/Images/personal/1.jpg" 
+                                class="clients__avatar"
+                                src="/Images/clients/1.jpg" 
                                 alt="Jenna Jonhson" 
                                 width="140px"
                                 height="140px"
                                 loading="lazy"
                             >
-                            <h4 class="personal__title">
+                            <h4 class="clients__title">
                                 Quick, easy & reliable
                             </h4>
-                            <div class="section__description personal__description">
+                            <div class="section__description">
                                 <p>
                                     Duis sed odio sit amet nibh vulputate cursus a sit am</br>
                                     mauris. Morbi accumsan sum ipsum velit. Nam nec</br>
                                     tellus am od tincidunt auctor.
                                 </p>
                             </div>
-                            <span class="personal__author">
+                            <span class="clients__author">
                                 Jenna Johnson
                             </span>
                         </article>
                     </li>
-                    <li class="personal__item">
-                        <article class="personal__card">
+                    <li class="clients__item">
+                        <article class="clients__card">
                             <img 
-                                class="personal__avatar"
-                                src="/Images/personal/2.jpg" 
+                                class="clients__avatar"
+                                src="/Images/clients/2.jpg" 
                                 alt="Jenna Jonhson" 
                                 width="140px"
                                 height="140px"
                                 loading="lazy"
                             >
-                            <h4 class="personal__title">
+                            <h4 class="clients__title">
                                 The best clinic in town
                             </h4>
-                            <div class="section__description personal__description">
+                            <div class="section__description">
                                 <p>
                                     Duis sed odio sit amet nibh vulputate cursus a sit am</br>
                                     mauris. Morbi accumsan sum ipsum velit. Nam nec</br>
                                     tellus am od tincidunt auctor.
                                 </p>
                             </div>
-                            <span class="personal__author">
+                            <span class="clients__author">
                                 Robert Logan
                             </span>
                         </article>
                     </li>
-                    <li class="personal__item">
-                        <article class="personal__card">
+                    <li class="clients__item">
+                        <article class="clients__card">
                             <img 
-                                class="personal__avatar"
-                                src="/Images/personal/3.jpg" 
+                                class="clients__avatar"
+                                src="/Images/clients/3.jpg" 
                                 alt="Jenna Jonhson" 
                                 width="140px"
                                 height="140px"
                                 loading="lazy"
                             >
-                            <h4 class="personal__title">
+                            <h4 class="clients__title">
                                 The true professionals
                             </h4>
-                            <div class="section__description personal__description">
+                            <div class="section__description">
                                 <p>
                                     Duis sed odio sit amet nibh vulputate cursus a sit am</br>
                                     mauris. Morbi accumsan sum ipsum velit. Nam nec</br>
                                     tellus am od tincidunt auctor.
                                 </p>
                             </div>
-                            <span class="personal__author">
+                            <span class="clients__author">
                                 August Johns
                             </span>
                         </article>
                     </li>
                 </ul>
-                <div class="pagination personal__pagination hidden-desktop">
+                <div class="pagination clients__pagination hidden-desktop">
                     <ul class="pagination__list">
                         <li class="pagination__item">
                             <button class="button button__pagination button__pagination--red" 
@@ -613,22 +613,22 @@
                 <nav class="treatment__menu">
                     <ul class="treatment__list">
                         <li class="treatment__menu-item">
-                            <a class="treatment__link treatment__link--active" href="/" target="_self">
+                            <a class="link treatment__link treatment__link--active" href="/" target="_self">
                                 Root Canal Specialist
                             </a>
                         </li>
                         <li class="treatment__menu-item">
-                            <a class="treatment__link" href="/" target="_self">
+                            <a class="link treatment__link" href="/" target="_self">
                                 Alignment Specialist
                             </a>
                         </li>
                         <li class="treatment__menu-item">
-                            <a class="treatment__link" href="/" target="_self">
+                            <a class="link treatment__link" href="/" target="_self">
                                 Cosmetic Dentistry
                             </a>
                         </li>
                         <li class="treatment__menu-item">
-                            <a class="treatment__link" href="/" target="_self">
+                            <a class="link treatment__link" href="/" target="_self">
                                 Live Dental Advisory
                             </a>
                         </li>
@@ -683,79 +683,87 @@
                     </p>
                 </div>
             </div>
-            <div class="container experts__container">
+            <div class="container">
                 <ul class="experts__list">
                     <li class="experts__item">
-                        <img 
-                            class="experts__avatar"
-                            src="./Images/experts/1.jpg" 
-                            alt="Howard Holmes" 
-                            width="290px"
-                            height="290px"
-                            loading="lazy"
-                        >
-                        <div class="experts__wrapper">
-                            <span class="experts__name">
-                                Howard Holmes
-                            </span>
-                            <span class="experts__role">
-                                Estetic dentist
-                            </span>
-                        </div>
+                        <article class="experts__card">
+                            <img 
+                                class="experts__avatar"
+                                src="./Images/experts/1.jpg" 
+                                alt="Howard Holmes" 
+                                width="290px"
+                                height="290px"
+                                loading="lazy"
+                            >
+                            <div class="experts__wrapper">
+                                <span class="experts__name">
+                                    Howard Holmes
+                                </span>
+                                <span class="experts__role">
+                                    Estetic dentist
+                                </span>
+                            </div>
+                        </article>
                     </li>
                     <li class="experts__item">
-                        <img 
-                            class="experts__avatar"
-                            src="./Images/experts/2.jpg" 
-                            alt="Ella Thompson" 
-                            width="290px"
-                            height="290px"
-                            loading="lazy"
-                        >
-                        <div class="experts__wrapper">
-                            <span class="experts__name">
-                                Ella Thompson
-                            </span>
-                            <span class="experts__role">
-                                Dental technician
-                            </span>
-                        </div>
+                        <article class="experts__card">
+                            <img 
+                                class="experts__avatar"
+                                src="./Images/experts/2.jpg" 
+                                alt="Ella Thompson" 
+                                width="290px"
+                                height="290px"
+                                loading="lazy"
+                            >
+                            <div class="experts__wrapper">
+                                <span class="experts__name">
+                                    Ella Thompson
+                                </span>
+                                <span class="experts__role">
+                                    Dental technician
+                                </span>
+                            </div>
+                        </article>
                     </li>
                     <li class="experts__item">
-                        <img 
-                            class="experts__avatar"
-                            src="./Images/experts/3.jpg" 
-                            alt="Vincent Cooper" 
-                            width="290px"
-                            height="290px"
-                            loading="lazy"
-                        >
-                        <div class="experts__wrapper">
-                            <span class="experts__name">
-                                Vincent Cooper
-                            </span>
-                            <span class="experts__role">
-                                Estetic dentist
-                            </span>
-                        </div>
+                        <article class="experts__card">
+                            <img 
+                                class="experts__avatar"
+                                src="./Images/experts/3.jpg" 
+                                alt="Vincent Cooper" 
+                                width="290px"
+                                height="290px"
+                                loading="lazy"
+                            >
+                            <div class="experts__wrapper">
+                                <span class="experts__name">
+                                    Vincent Cooper
+                                </span>
+                                <span class="experts__role">
+                                    Estetic dentist
+                                </span>
+                            </div>
+                        </article>
                     </li>
                     <li class="experts__item">
-                        <img 
-                            class="experts__avatar"
-                            src="./Images/experts/4.jpg" 
-                            alt="Danielle Bryant" 
-                            width="290px"
-                            height="290px"
-                            loading="lazy"
-                        >
-                        <div class="experts__wrapper">
-                            <span class="experts__name">
-                                Danielle Bryant
-                            </span>
-                            <span class="experts__role">
-                                Dental technician
-                            </span>
-                        </div>
+                        <article class="experts__card">
+                            <img 
+                                class="experts__avatar"
+                                src="./Images/experts/4.jpg" 
+                                alt="Danielle Bryant" 
+                                width="290px"
+                                height="290px"
+                                loading="lazy"
+                            >
+                            <div class="experts__wrapper">
+                                <span class="experts__name">
+                                    Danielle Bryant
+                                </span>
+                                <span class="experts__role">
+                                    Dental technician
+                                </span>
+                            </div>
+                        </article>
                     </li>
                 </ul>
             </div>
@@ -959,7 +967,7 @@
     <footer class="footer section__margin">
         <ul class="footer__list">
             <li class="footer__item">
-                <a class="footer__link" href="/" target="_blank">
+                <a class="link footer__link" href="/" target="_blank">
                     <img 
                         class="footer__icon"
                         src="./Icons/footer/1.svg" 
@@ -971,7 +979,7 @@
                 </a>
             </li>
             <li class="footer__item">
-                <a class="footer__link" href="/" target="_blank">
+                <a class="link footer__link" href="/" target="_blank">
                     <img 
                         class="footer__icon"
                         src="./Icons/footer/2.svg" 
@@ -983,7 +991,7 @@
                 </a>
             </li>
             <li class="footer__item">
-                <a class="footer__link" href="/" target="_blank">
+                <a class="link footer__link" href="/" target="_blank">
                     <img 
                         class="footer__icon"
                         src="./Icons/footer/3.svg" 
@@ -995,7 +1003,7 @@
                 </a>
             </li>
             <li class="footer__item">
-                <a class="footer__link" href="/" target="_blank">
+                <a class="link footer__link" href="/" target="_blank">
                     <img 
                         class="footer__icon"
                         src="./Icons/footer/4.svg" 
@@ -1007,7 +1015,7 @@
                 </a>
             </li>
             <li class="footer__item">
-                <a class="footer__link" href="/" target="_blank">
+                <a class="link footer__link" href="/" target="_blank">
                     <img 
                         class="footer__icon"
                         src="./Icons/footer/5.svg" 
@@ -1019,7 +1027,7 @@
                 </a>
             </li>
             <li class="footer__item">
-                <a class="footer__link" href="/" target="_blank">
+                <a class="link footer__link" href="/" target="_blank">
                     <img 
                         class="footer__icon"
                         src="./Icons/footer/6.svg" 
