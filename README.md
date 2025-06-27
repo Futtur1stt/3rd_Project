@@ -1,5 +1,5 @@
 # 3rd_Project
-3rd project / Semantic and adaptive layout / HTML + SCSS + BEM
+3rd project / Semantic and adaptive layout / HTML + SCSS + BEM</br>
 3ий проект / Семантический и адаптивный макет / HTML + SCSS + BEM</br>
 
 ## Адаптивная вёрстка макета
