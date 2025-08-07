@@ -14,7 +14,7 @@
 Чтобы запустить проект локально, выполните следующие шаги:
 
 1. Клонируйте репозиторий:
-   git clone https://futtur1stt.github.io/3rd_Project/
+   git clone https://github.com/Futtur1stt/3rd_Project.git
 2. Перейдите в директорию проекта:
    cd 3rd_Project
 3. Откройте файл index.html в своем браузере
